@@ -1,0 +1,130 @@
+:root {
+  --blue: rgba(171, 201, 255, 1);
+  --red: rgba(255, 110, 110, 1);
+}
+
+.ticket-page {
+  margin-top: 65px;
+  background-color: rgba(171, 201, 255, 1);
+}
+
+.choose-ticket {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.choose-ticket button {
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.aktif button {
+  background-color: white;
+  border: none;
+  font-weight: 900;
+}
+
+.aktif button:hover {
+  background-color: rgba(171, 201, 255, 1);
+  border: none;
+  font-weight: 900;
+  transition: 0.2s;
+}
+
+.selesai button {
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+}
+
+.selesai button:hover {
+  background-color: white;
+  border: none;
+  font-weight: 900;
+}
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-bottom: 310px;
+}
+
+.text-ticket-card {
+  position: absolute;
+  display: flex;
+  top: 165px;
+  left: 40px;
+  gap: 70px;
+}
+
+.text-ticket-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-ticket-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-ticket-card-right h4 {
+  background-color: var(--red);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 70px;
+  margin-left: 40px;
+}
+
+.text-ticket-card-right h5 {
+  margin-left: 50px;
+}
+
+.ticket-seat {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  margin-top: 120px;
+  margin-left: 25px;
+}
+
+.total-ticket {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-seat-number {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-code {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 70px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.look-ticket-button {
+  position: absolute;
+  margin-top: 280px;
+}
+
+.look-ticket-button button {
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 265px;
+  height: 40px;
+  margin-left: 50px;
+}

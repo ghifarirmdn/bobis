@@ -1,0 +1,120 @@
+.beli-tiket {
+  margin-top: 65px;
+  background-color: rgba(171, 201, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 170px;
+}
+
+.beli-tiket-card {
+  width: 315px;
+  height: 480px;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+.buy-date {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.buy-date p {
+  font-size: 13px;
+}
+
+.tiket-tipe {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.tiket-tipe p {
+  font-size: 12px;
+}
+
+.information {
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.information p {
+  font-size: 13px;
+}
+
+.jumlah-tiket {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumlah-tiket-left {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+}
+
+.period {
+  display: flex;
+  justify-content: space-between;
+}
+
+.period-left {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+
+.kode-transaksi {
+  text-align: center;
+}
+
+.kode-transaksi p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.metode-pembayaran {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.pilih-metode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.total-pembayaran {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.total-pembayaran p {
+  font-size: 13px;
+  color: rgba(57, 158, 216, 1);
+}
+
+.confirm-beli-tiket {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.batal {
+  margin-left: 40px;
+}
+
+.bayar {
+  margin-right: 40px;
+}

@@ -1,0 +1,19 @@
+.register {
+  background-color: rgba(171, 201, 255, 1);
+}
+
+.title-text {
+  padding: 40px 16px 20px;
+  color: white;
+}
+
+.button-registrasi {
+  display: block;
+  margin: auto;
+  width: 358px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 110, 110, 1);
+  color: white;
+}

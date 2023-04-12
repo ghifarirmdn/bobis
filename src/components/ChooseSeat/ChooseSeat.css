@@ -1,0 +1,22 @@
+.card-seat-choose {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.card-seat-choose-left {
+  display: flex;
+  gap: 20px;
+}
+
+.card-seat-choose-right {
+  display: flex;
+  gap: 20px;
+}
+
+.full-seat {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.09);
+}

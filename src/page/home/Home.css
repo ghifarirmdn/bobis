@@ -1,0 +1,162 @@
+:root {
+  --blue: rgba(171, 201, 255, 1);
+  --red: rgba(255, 110, 110, 1);
+}
+
+.nav-home {
+  background-color: var(--blue);
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.nav-home-text {
+  padding: 48px 0 13px 26px;
+  color: white;
+}
+
+.search-bar {
+  padding-bottom: 20px;
+}
+
+.input-destination {
+  height: 40px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid white;
+  color: black;
+}
+
+.card-home-destination {
+  margin: 15px 16px 0;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+}
+
+.card-home-destination-up {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.icon-from {
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 15px;
+}
+
+.icon-line {
+  position: absolute;
+  padding-left: 22px;
+  padding-top: 24px;
+}
+
+.icon-to {
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 42px;
+}
+
+.card-home-destination-up-left-mid {
+  padding-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.card-home-destination-up-right {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.card-home-destination-down {
+  padding: 15px 0;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 118px 118px 118px;
+}
+
+.departure-on {
+  display: grid;
+  justify-content: center;
+}
+
+.travel-time {
+  display: grid;
+  justify-content: center;
+}
+
+.seat {
+  display: grid;
+  justify-content: center;
+}
+
+.menu-home {
+  margin: 16px;
+  border: 1px solid rgba(171, 201, 255, 1);
+  border-radius: 10px;
+  height: 80px;
+}
+
+.menu-home-icon {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 13px;
+}
+
+.menu-riwayat-icon {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-rute-icon {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-bus-icon {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-informasi-icon {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-home-icon h5 {
+  text-align: center;
+}
+
+.berita-home {
+  margin: 16px;
+}
+
+.title-berita-home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-berita-home p {
+  font-size: 12px;
+}

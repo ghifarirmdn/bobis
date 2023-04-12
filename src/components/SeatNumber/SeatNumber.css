@@ -1,0 +1,10 @@
+.seat-number {
+  width: 65px;
+  height: 20px;
+  background-color: rgba(255, 110, 110, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+.nav {
+  background-color: rgba(171, 201, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+
+.nav img {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.nav h4 {
+  padding-right: 160px;
+}

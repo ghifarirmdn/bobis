@@ -1,0 +1,94 @@
+.blank-search {
+  background-color: transparent;
+  margin-top: 65px;
+}
+
+.search-card {
+  margin: 100px 16px 10px;
+  background-color: rgba(153, 153, 153, 0.05);
+  height: 85px;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.input-card {
+  width: 70%;
+  padding: 15px 25px;
+}
+
+.search-card input {
+  background-color: transparent;
+  border: none;
+  /* border: 1px solid black; */
+  outline: none;
+}
+
+.search-card-logo {
+  display: flex;
+  align-items: center;
+}
+
+.search-card-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.choose-map {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  right: 16px;
+  padding: 5px;
+}
+
+.choose-map p {
+  font-size: 10px;
+}
+
+.destination-category {
+  display: flex;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.destination-category button {
+  background-color: transparent;
+  border: 1px solid rgb(209, 207, 207);
+  border-radius: 5px;
+  width: 45px;
+  font-size: 12px;
+}
+
+.destination-category .next button {
+  background-color: transparent;
+  border-radius: 5px;
+  width: 45px;
+  font-size: 12px;
+  margin-left: 200px;
+  background-color: rgba(255, 110, 110, 1);
+  color: white;
+}
+
+.destination-history {
+  display: flex;
+  margin: 0 16px 10px;
+}
+
+.destination-history-icon {
+  display: flex;
+  align-items: center;
+}
+
+.tujuan {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.tujuan p {
+  font-size: 10px;
+}

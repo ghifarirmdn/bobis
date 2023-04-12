@@ -1,0 +1,70 @@
+:root {
+  --blue: rgba(171, 201, 255, 1);
+  --red: rgba(255, 110, 110, 1);
+}
+
+.card-profile {
+  background-color: var(--blue);
+  margin: 40px 16px;
+  padding-left: 20px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+
+.pp img {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-content {
+  /* background-color: var(--red); */
+  margin: 0 16px;
+  display: grid;
+  gap: 20px;
+}
+
+.profile-content-left {
+  gap: 20px;
+  /* background-color: var(--red); */
+  /* margin: 0 16px; */
+  /* display: grid; */
+  /* gap: 20px; */
+  /* padding-right: 100px; */
+}
+
+.profile-content-left {
+  display: flex;
+}
+
+.privasi {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.layanan {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.bantuan {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-between;
+}

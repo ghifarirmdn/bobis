@@ -1,0 +1,57 @@
+.card-riwayat {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  margin: 10px 16px;
+  border-radius: 15px;
+  font-size: 12px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  box-shadow: -7px 0px 0px -1px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: -7px 0px 0px -1px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: -7px 0px 0px -1px rgba(0, 0, 0, 0.26);
+}
+
+.icon-biru {
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 21px;
+}
+
+.icon-garis {
+  position: absolute;
+  padding-left: 22px;
+  padding-top: 30px;
+}
+
+.icon-merah {
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 50px;
+}
+
+.card-riwayat-mid {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.card-riwayat-right-color {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card-riwayat-right {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  padding-right: 10px;
+}
+
+.nomor-kursi {
+  width: 65px;
+  height: 20px;
+  background-color: var(--red);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}

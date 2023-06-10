@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Profile.css";
 import profile from "../../assets/image/pp.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,8 +11,19 @@ import {
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import BottomNav from "../../components/BottomNav/BottomNav";
+import { useNavigate } from "react-router-dom";
+import UserContext from "../../context/userContext";
 
 const Profile = () => {
+  let navigate = useNavigate();
+  const { user } = useContext(UserContext);
+  let token = localStorage.getItem("token");
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
+
   return (
     <>
       <div className="profile">
@@ -21,8 +32,8 @@ const Profile = () => {
             <img src={profile} alt="" />
           </div>
           <div className="name">
-            <h4>Tika</h4>
-            <p>tika@gmail.com</p>
+            <h4>{user.name}</h4>
+            <p>{user.email}</p>
           </div>
         </div>
 
@@ -55,7 +66,11 @@ const Profile = () => {
             </div>
             <FontAwesomeIcon icon={faAngleRight} />
           </div>
-          <div className="logout">
+          <div
+            onClick={handleLogout}
+            className="logout"
+            style={{ color: "#FF6E6E" }}
+          >
             <div className="profile-content-left">
               <FontAwesomeIcon icon={faRightFromBracket} />
               <h4>Logout</h4>

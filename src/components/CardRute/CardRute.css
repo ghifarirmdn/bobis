@@ -1,14 +1,25 @@
+.blank {
+  margin-top: 80px;
+}
+
 .card-rute {
   border: 1px solid rgba(40, 165, 236, 1);
   margin: 13px 16px;
   border-radius: 10px;
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   top: 100px;
+  padding: 0 50px;
   box-shadow: -7px 0px 0px -1px rgba(40, 165, 236, 1);
   -webkit-box-shadow: -7px 0px 0px -1px rgba(40, 165, 236, 1);
   -moz-box-shadow: -7px 0px 0px -1px rgba(40, 165, 236, 1);
+}
+
+.destinasi {
+  font-size: 12px;
+  width: 150px;
 }
 
 .kode-rute {
@@ -18,7 +29,6 @@
   color: white;
   text-align: center;
   align-items: center;
-  margin-top: 12px;
   border-radius: 7px;
 }
 
@@ -32,6 +42,6 @@
   font-size: 14px;
 }
 
-.jam {
+.keterangan-jam {
   font-size: 12px;
 }

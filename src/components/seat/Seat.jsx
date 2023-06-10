@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Seat.css";
 import { useState } from "react";
 
 const Seat = (props) => {
   const [active, setActive] = useState(false);
 
-  const handleClick = (props) => {
+  const handleClick = () => {
+    props.onClick(props.data);
+    // props.setNumberSeat(props.text);
     setActive(!active);
   };
+
+  useEffect(() => {
+    if (active) {
+      localStorage.setItem("selectedSeat", props.data.id);
+    }
+  }, [active]);
+
+  // console.log(selectedSeat);
+
   return (
     <div
-      className="seat"
-      style={{
-        backgroundColor: active ? "red" : "rgba(255, 110, 110, 1)",
-      }}
+      className={`seat ${
+        parseInt(props.type) === 1
+          ? "basic"
+          : parseInt(props.type) === 2
+          ? "disable"
+          : "pregnant"
+      } ${props.data.id === props.selected?.id ? "active" : ""}`}
       onClick={handleClick}
-    ></div>
+    >
+      <p style={{ color: "white" }}>{props.text}</p>
+    </div>
   );
 };
 

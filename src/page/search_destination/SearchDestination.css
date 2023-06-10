@@ -3,7 +3,32 @@
   margin-top: 65px;
 }
 
-.search-card {
+.dropdown {
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 7px 15px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 7px 15px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 7px 15px -4px rgba(0, 0, 0, 0.75);
+  height: 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dropdown option {
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  border: none;
+  height: 30px;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* .search-card {
   margin: 100px 16px 10px;
   background-color: rgba(153, 153, 153, 0.05);
   height: 85px;
@@ -20,7 +45,7 @@
 .search-card input {
   background-color: transparent;
   border: none;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   outline: none;
 }
 
@@ -32,22 +57,7 @@
 .search-card-logo img {
   width: 30px;
   height: 30px;
-}
-
-.choose-map {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  border: 1px solid black;
-  border-radius: 5px;
-  position: absolute;
-  right: 16px;
-  padding: 5px;
-}
-
-.choose-map p {
-  font-size: 10px;
-}
+} */
 
 .destination-category {
   display: flex;

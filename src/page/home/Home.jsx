@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import searchStatus from "../../assets/icon/search.svg";
 import place1 from "../../assets/icon/place-form.svg";
 import line from "../../assets/icon/line.svg";
@@ -12,28 +12,40 @@ import informasi from "../../assets/icon/informasi.svg";
 import CardNews from "../../components/CardNews/CardNews";
 import BottomNav from "../../components/BottomNav/BottomNav";
 import SeatNumber from "../../components/SeatNumber/SeatNumber";
+import Form from "../../components/Form/Form";
+import Button from "../../components/Button/Button";
+import UserContext from "../../context/userContext";
 
 const Home = () => {
+  let navigate = useNavigate();
+  const { user } = useContext(UserContext);
+  const [authenticated, setauthenticated] = useState(null);
+  // const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("token");
+    console.log(loggedInUser);
+    if (loggedInUser) {
+      setauthenticated(loggedInUser);
+      // getUser();
+    } else {
+      navigate("/");
+    }
+  }, []);
+  console.log(user);
   return (
     <>
       <div className="nav-home">
         <div className="nav-home-text">
           <h4>
-            Hai tika.. <br />
+            Hai {user?.name} <br />
             Mau kemana hari ini?
           </h4>
         </div>
         <div className="search-bar">
-          <form className="wrapper-search-bar">
-            {/* <img src={searchStatus} alt="" /> */}
-            <Link to="/search-destination">
-              <input
-                type="email"
-                placeholder="Cari Destinasi"
-                className="input-destination"
-              />
-            </Link>
-          </form>
+          <Link to="/search-destination">
+            <Button style={{ width: "150px" }} text="Cari Destinasi" />
+          </Link>
         </div>
       </div>
 

@@ -5,8 +5,16 @@ import Navbar from "../../components/Navbar/Navbar";
 import TicketCard from "../../assets/icon/ticket-card.svg";
 import ticket from "../../assets/icon/total-ticket.svg";
 import bus from "../../assets/icon/bus-ticket.svg";
+import { useLocation } from "react-router-dom";
 
 const Ticket = () => {
+  const location = useLocation();
+  const [orderId, setOrderId] = React.useState(null);
+
+  React.useEffect(() => {
+    setOrderId(location.search.split("&")[0].replace("?order_id=", ""));
+  }, [location]);
+
   return (
     <>
       <Navbar title="Ticket" />
@@ -50,7 +58,7 @@ const Ticket = () => {
           </div>
 
           <div className="ticket-code">
-            <h3>1A2023031525REG151515</h3>
+            <h3>{orderId ?? "Loading..."}</h3>
           </div>
           <div className="look-ticket-button">
             <button>Lihat Tiket</button>
